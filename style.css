@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+
+}
+*::selection{
+    color: #fff;
+    background-color: black;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+#nav{
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px;
+
+
+
+}
+#nav #nav-part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+#links{
+    padding: 10px;
+}
+#nav-part2 #links a{
+    text-transform: uppercase;
+
+    text-decoration: none;
+    color: #333;
+    font-size: 500;
+    font-size: 14px;
+    margin:0 30px;
+
+
+}
+#icons{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #fff;
+  
+}
+
+ #icons i{
+
+    font-size: 10px;
+    margin : 0 20px;
+    font-weight: 100;
+    font-size: 20px;
+
+}
+
+#cursor{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(221, 214, 139);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50,-50)  scale(0);
+    
+}
+#page1{
+   min-height: 100vh; 
+    position: relative;
+     width: 100%;
+     padding: 0 2vw;
+     padding-top: 20vh;
+
+
+}
+
+#page1 h1{
+    font-size: 14.2vw;
+    text-transform: uppercase;
+    font-family: futura;
+    line-height: 14vw;
+    letter-spacing: -8px;
+}
+#video-Container{
+    height: 100vh;
+    width: 100%;
+    background-color: gray;
+    margin-top: 1vw;
+    position: relative;
+}
+#video-Container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#video-Container #play{
+    padding: 2.2vw;
+    background-color: black;
+    color: #fff;
+    font-size: 1.3vw;
+    position: fixed;
+    text-transform: uppercase;
+    font-family: futura;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
+#page2{
+   min-height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+    position: relative;
+    display: flex;
+    padding: 3vw 1vw;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#page2 .elem{
+    height: 100%;
+    width: 31%;
+    /* background-color: red; */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#page2 .elem img{
+    min-height: 100vh;
+   width: 100%;
+   object-fit: cover;
+   scale: 1.1;
+   
+}
+#page2  .elem .dets{
+height: 60px;
+width: 70%;
+border-radius: 50px;
+position: absolute;
+
+z-index: 9;
+background-color: palegoldenrod;
+}
+
+#page2 .elem .dets:hover{
+
+    height: 200px;
+}
+
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.child{
+    height: 54vh;
+    width: 38vw;
+    /* background-color: red; */
+    /* border: 2px; */
+    border-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.child img{
+    height: 100%;
+    width: 100%;
+}
+#nav-part1{
+    height: 78px;
+    overflow: hidden;
+}
+#nav-part1 svg{
+    display: block;
+
+}
+#nav #twogoodlogo{
+    height: 60px;
+    margin-left: -3px;
+    padding-bottom: 2px;
+}
+
+
+ 
+ 
+ 
+ 
+ 
+
+@media (max-width:600px) {
+    #nav{
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 15px;
+    
+    
+    
+    }
+    #nav #nav-part2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    #links{
+        padding: 10px;
+        display: none;
+    }
+    #nav-part2 #links a{
+        text-transform: uppercase;
+    
+        text-decoration: none;
+        color: #333;
+        font-size: 500;
+        font-size: 14px;
+        margin:0 30px;
+    
+    
+    }
+    #icons{
+        padding: 7px;
+        border-radius: 50px;
+        background-color: #fff;
+      
+    }
+    #nav #twogoodlogo{
+        height: 40px;
+        margin-left: -20px;
+    }
+    
+     #icons i{
+    
+        font-size: 10px;
+        margin : 0 20px;
+        font-weight: 100;
+        font-size: 20px;
+    
+    }
+    #nav-part1{
+        /* background-color: pink; */
+        height: 63px;
+        overflow: hidden;
+    }
+    #nav-part1 svg{
+        display: block;
+        height: 63px;
+        width: 80px;
+    }
+    
+   
+    #page1{
+        min-height: 70vh;
+          width: 100%;
+          padding: 0 3vw;
+          padding-top: 25vh;
+     
+     
+     }
+    
+    #page1 h1{
+        font-size: 15vw;
+        letter-spacing: -3px;
+    }
+
+    #video-Container{
+        height: 25vh;
+        width: 100%;
+        margin-top: 3vw;
+    }
+    #video-Container #play{
+        padding: 9.5vw 7.2vw;
+        background-color: black;
+        color: #fff;
+        font-size: 4vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-transform: uppercase;
+        font-family: futura;
+        border-radius: 50%;
+        opacity: 1;
+        scale: 1;
+        transform: translate(-50%,-50%);
+    }
+    #page2{
+        min-height: 100vh;
+         width: 100%;
+         background-color: aliceblue;
+         position: relative;
+         display: flex;
+         padding: 5vw 3vw;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+     
+     }
+     #page2 .elem{
+         height: 100vh;
+         width: 100%;
+         /* background-color: red; */
+         overflow: hidden;
+         margin-bottom: 3vw;
+     }
+     #page2 .elem img{
+         height: 100%;
+         width: 100%;
+         object-fit: cover;
+         scale: 1.1;
+     }
+     #page3{
+        min-height: 120vh;
+        width: 100%;
+        background-color: #f7f7f7;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    
+    }
+    .child{
+        height: 54vh;
+        width: 100%;
+        /* background-color: red; */
+        /* border: 2px; */
+        border-color: black;
+        position: relative;
+        padding: 10vw;
+        display: flex;
+        align-items: center;
+    }
+    
+    .child img{
+        height: 100%;
+        width: 100%;
+    }
+
+}
